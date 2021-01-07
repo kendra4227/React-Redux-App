@@ -9,15 +9,18 @@ html {
   height: 100%;
 }
 body {
-  background: linear-gradient(0.50turn, #d68556, #c46b37);
+  background: linear-gradient(0.50turn, #58607B, #F3AA34);
 }
 
 button {
  margin: 30px;
- background-color: antiquewhite;
+ background-color: #F3AA34;
  padding: 8px 30px;
  font-size: 12px;
- box-shadow: 2px 3px 7px 3px #5f483a;
+ box-shadow: 2px 3px 7px 3px #58607B
+ 
+ 
+ ;
  border-radius: 5px;
 }
 
