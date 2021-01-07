@@ -1,12 +1,10 @@
-import {FETCH_MOVIE_DATA_START, FETCH_MOVIE_DATA_SUCCESS,FETCH_MOVIE_DATA_FAILURE} from '../store/actions';
+import {FETCH_MOVIE_DATA_START, FETCH_MOVIE_DATA_SUCCESS,FETCH_MOVIE_DATA_FAILURE} from './actions';
 // creating initial state
 const initialState = {
-    title:[],
+    movie:null,
+    decription:null,
     error:(""),
-    isFetching:false,
-    nextURL:"https://ghibliapi.herokuapp.com/films",
-    lastURL:"https://ghibliapi.herokuapp.com/films"
-
+    isFetching:false
 };
 
 const reducer = (state = initialState, action) => {
@@ -20,11 +18,10 @@ const reducer = (state = initialState, action) => {
            case FETCH_MOVIE_DATA_SUCCESS: 
            return{
                ...state,
-               title: action.payload.results,
+               movie: action.payload.movieTitle,
+               description:action.payload.movieDescription,
                error:(""),
                isFetching:false,
-               nextURL: action.payload.next,
-               lastURL:action.payload.previous
            }
            case FETCH_MOVIE_DATA_FAILURE:
                return {

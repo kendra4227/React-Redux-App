@@ -1,38 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+} 
+
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(0.50turn, #d68556, #c46b37);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+ margin: 30px;
+ background-color: antiquewhite;
+ padding: 8px 30px;
+ font-size: 12px;
+ box-shadow: 2px 3px 7px 3px #5f483a;
+ border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie {
+  background-color: antiquewhite;
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+  box-shadow: 5px 8px 15px 10px #5f483a;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+h1 {
+  opacity: 0.8;
+  margin: 50px;
+  font-size: 45px;
+} 
