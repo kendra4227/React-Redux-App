@@ -11,4 +11,4 @@ const Movie = props => {
   );
 };
 
-export default Brewery;
+export default Movie;
