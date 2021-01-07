@@ -10,7 +10,7 @@ import "@elastic/react-search-ui-views/lib/styles/styles.css";
 const connector = new AppSearchAPIConnector({
   searchKey: "search-371auk61r2bwqtdzocdgutmg",
   engineName: "search-ui-examples",
-  endpointBase: "http://127.0.0.1:3002",
+  endpointBase: "https://ghibliapi.herokuapp.com/films",
   cacheResponses: false
 });
 
