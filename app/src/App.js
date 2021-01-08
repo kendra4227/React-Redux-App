@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Movie from './components/MovieList';
+import MovieList from './components/MovieList';
 import axios from 'axios';
 import React from "react";
 
@@ -15,7 +15,7 @@ const App =()=> {
   return (
     <div className ="App">
       <Header/>
-    <Movie/>
+    <MovieList/>
     </div>
     
   );
