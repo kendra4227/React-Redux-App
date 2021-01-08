@@ -2,7 +2,7 @@ import {FETCH_MOVIE_DATA_START, FETCH_MOVIE_DATA_SUCCESS,FETCH_MOVIE_DATA_FAILUR
 // creating initial state
 const initialState = {
     movie:null,
-    decription:null,
+    description:null,
     error:(""),
     isFetching:false
 };
@@ -16,10 +16,12 @@ const reducer = (state = initialState, action) => {
                isFetching: true
            }
            case FETCH_MOVIE_DATA_SUCCESS: 
+          let randMovie= Math.floor(Math.random()*20)
+          //console.log(randMovie);
            return{
                ...state,
-               movie: action.payload.movieTitle,
-               description:action.payload.movieDescription,
+               movie: action.payload[randMovie].title,
+               description:action.payload[randMovie].description,
                error:(""),
                isFetching:false,
            }

@@ -11,7 +11,7 @@ const MovieList = props => {
             {props.isFetching && (
                 <Loader type="Puff" color="#00BFFF" height={100} width={100} />
             )}
-{props.movie && !props.isFetching && <><p>{props.title}</p><p>- {props.description}</p></>}
+{props.movie && !props.isFetching && <><p>{props.movie}</p><p>{props.description}</p></>}
 
 
           <div style={{display: "flex", flexDirection: "row", width: 700, flexWrap: "wrap", margin: "0 auto", backgroundColor: 'white', border: '1px solid black'}}>
@@ -27,7 +27,7 @@ const MovieList = props => {
 const mapStateToProps = (state) => {
     return {
         movie: state.movie,
-        discription:state.discription,
+        description:state.description,
         isFetching:state.isFetching,
         error:state.error
     }
