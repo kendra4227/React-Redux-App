@@ -16,6 +16,7 @@ const reducer = (state = initialState, action) => {
                isFetching: true
            }
            case FETCH_MOVIE_DATA_SUCCESS: 
+           // random movie when click
           let randMovie= Math.floor(Math.random()*20)
           //console.log(randMovie);
            return{

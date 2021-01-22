@@ -11,14 +11,14 @@ const MovieList = props => {
             {props.isFetching && (
                 <Loader type="Puff" color="#00BFFF" height={100} width={100} />
             )}
-{props.movie && !props.isFetching && <><p>{props.movie}</p><p>{props.description}</p></>}
+{props.movie && !props.isFetching && <><p>Title: {props.movie}</p><p>Description:{props.description}</p></>}
 
 
           <div style={{display: "flex", flexDirection: "row", width: 700, flexWrap: "wrap", margin: "0 auto", backgroundColor: 'white', border: '1px solid black'}}>
 
         </div>
         <div style={{display: "flex", justifyContent: "space-evenly", width: 500, margin: "2% auto"}}>
-                <button onClick={ props.getMovie} style={{fontFamily: 'Roboto Mono, monospace'}}> Click for a Movie Title </button>
+                <button onClick={ props.getMovie} style={{fontFamily: 'Roboto Mono, monospace'}}> Click for a Movie  </button>
 
         </div>
         </div>
